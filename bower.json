@@ -1,0 +1,18 @@
+{
+  "name": "GreenField.Web",
+  "version": "0.0.1",
+  "homepage": "https://github.com/supertigerzou/GreenField.Web",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.23"
+  }
+}
