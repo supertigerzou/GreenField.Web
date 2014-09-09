@@ -1,10 +1,10 @@
 ﻿
 
-var greenFieldApp = angular.module('greenFieldApp', [
+var app = angular.module('greenFieldApp', [
     'ngRoute'
 ]);
 
-greenFieldApp.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when("/login", {
         controller: "",
         templateUrl: ""
