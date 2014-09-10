@@ -2,13 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="GreenFieldApp">
 <head>
     <title></title>
+    
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
     <body>
         
-        <div ng-view></div>
+        <div data-ng-view=""></div>
     
         <script src="bower_components/angularjs/angular.min.js"></script>
         <script src="bower_components/angular-route/angular-route.min.js"></script>
+        
+        <!-- Load app main script -->
+        <script src="app/app.js"></script>
+        
+        <!-- Load services -->
+        <script src="app/services/authService.js"></script>
+        
+        <!-- Load controllers -->
+        <script src="app/controllers/loginController.js"></script>
 
     </body>
 </html>
