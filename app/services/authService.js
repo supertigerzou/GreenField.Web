@@ -20,6 +20,8 @@ app.factory('authService', ['$http', '$q', function ($http, $q) {
 
                 deferred.resolve(response);
             });
+
+        return deferred.promise;
     };
 
     var _logOut = function () {

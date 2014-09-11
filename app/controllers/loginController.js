@@ -1,5 +1,5 @@
 ﻿
-app.controller('loginController', ['$scope', '#location', 'authService', function ($scope, $location, authService) {
+app.controller('loginController', ['$scope', '$location', 'authService', function ($scope, $location, authService) {
     $scope.loginData = {
         userName: "",
         password: ""
