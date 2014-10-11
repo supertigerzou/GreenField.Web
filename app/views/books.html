@@ -14,6 +14,9 @@
             <tbody>
                 <tr data-ng-repeat="book in books">
                     <td>
+                        <img ng-src="{{ imageBase + book.PictureModels[0].ImageUrl }}" alt=""/>
+                    </td>
+                    <td>
                         {{ book.Name }}
                     </td>
                     <td>
