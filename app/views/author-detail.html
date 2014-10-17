@@ -1,0 +1,17 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <div class="wrapper" style="margin-bottom: 30px">
+            <!-- image -->
+            <img ng-src="{{ authorImg }}" style="width: 400px" />
+            <!-- description div -->
+            <div class='description'>
+                <!-- description content -->
+                <p class='description_content'>{{author.Name}}</p>
+                <!-- end description content -->
+            </div>
+            <!-- end description div -->
+        </div>
+    </div>
+    
+    <div ng-bind-html="authorDesc" class="col-md-6" style="padding-top: 30px"></div>
+</div>

@@ -4,7 +4,7 @@
     <title></title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="app/styles/app.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <script src="bower_components/angularjs/angular.min.js"></script>
+    <script src="bower_components/angularjs/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
 
     <!-- Load app main script -->
@@ -22,10 +22,13 @@
     <!-- Load services -->
     <script src="app/services/authService.js"></script>
     <script src="app/services/booksService.js"></script>
+    <script src="app/services/authorsService.js"></script>
 
     <!-- Load controllers -->
     <script src="app/controllers/loginController.js"></script>
     <script src="app/controllers/booksController.js"></script>
+    <script src="app/controllers/authorsController.js"></script>
+    <script src="app/controllers/authorDetailsController.js"></script>
 
 </body>
 </html>

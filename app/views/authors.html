@@ -1,0 +1,29 @@
+﻿
+<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="author in authors">
+                    <td>
+                        <img ng-src="{{ imageBase + author.PictureModels[0].ImageUrl }}" alt="" />
+                    </td>
+                    <td>
+                        {{ author.Name }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>

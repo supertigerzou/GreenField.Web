@@ -11,6 +11,12 @@ app.config(['$routeProvider', function ($routeProvider) {
     }).when("/books", {
         controller: "booksController",
         templateUrl: "/app/views/books.html"
+    }).when("/authors", {
+        controller: "authorsController",
+        templateUrl: "/app/views/authors.html"
+    }).when('/authors/:authorId', {
+        controller: 'authorDetailsController',
+        templateUrl: '/app/views/author-detail.html'
     }).otherwise({
         redirectTo: "/login"
     });
