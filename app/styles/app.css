@@ -1,4 +1,26 @@
-﻿div.wrapper{
+﻿body {
+  padding-top: 20px;
+}
+
+.authors {
+  list-style: none;
+}
+
+.authors li {
+  clear: both;
+  min-height: 80px;
+  padding-top: 15px;
+}
+
+.thumb {
+    float: left;
+    margin: -0.5em 1em 1.5em 0;
+    padding-bottom: 1em;
+    height: 30px;
+    width: 70px;
+}
+
+div.wrapper{
 	float:left; /* important */
 	position:relative; /* important(so we can absolutely position the description div */ 
 }
