@@ -3,10 +3,10 @@
         <ul class="authors" style="padding-left: 0px">
             <li ng-repeat="author in authors"
                 class="thumbnail">
-                <a href="#/authors/{{ author.Id }}" class="thumb">
-                    <img ng-src="{{ imageBase + author.PictureModels[0].ImageUrl }}" style="width: 50px"></a>
-                <a href="#/authors/{{ author.Id }}">{{ author.Name }}</a>
-                <p>{{author.ShortDescription}}</p>
+                <a href="#/authors/{{ author.id }}" class="thumb">
+                    <img ng-src="{{ imageBase + author.pictureModels[0].imageUrl }}" style="width: 50px"></a>
+                <a href="#/authors/{{ author.id }}">{{ author.name }}</a>
+                <p>{{author.shortDescription}}</p>
             </li>
         </ul>
     </div>

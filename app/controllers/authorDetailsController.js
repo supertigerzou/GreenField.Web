@@ -5,8 +5,8 @@ app.controller('authorDetailsController', ['$scope', '$sce', '$routeParams', 'au
 
     authorsService.getAuthorById($routeParams.authorId).then(function (results) {
         $scope.author = results.data;
-        $scope.authorDesc = $sce.trustAsHtml($scope.author.Description);
-        $scope.authorImg = $scope.imageBase + $scope.author.PictureModels[0].FullSizeImageUrl;
+        $scope.authorDesc = $sce.trustAsHtml($scope.author.description);
+        $scope.authorImg = $scope.imageBase + $scope.author.pictureModels[0].fullSizeImageUrl;
     }, function (error) {
         console.log(error.data.message);
     });
