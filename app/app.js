@@ -1,7 +1,7 @@
 ﻿
 
 var app = angular.module('GreenFieldApp', [
-    'ngRoute'
+    'ngRoute', 'LocalStorageModule'
 ]);
 
 app.config(['$routeProvider', function ($routeProvider) {
@@ -20,4 +20,12 @@ app.config(['$routeProvider', function ($routeProvider) {
     }).otherwise({
         redirectTo: "/login"
     });
+}]);
+
+app.config(function ($httpProvider) {
+    $httpProvider.interceptors.push('authInterceptorService');
+});
+
+app.run(['authService', function (authService) {
+    authService.fillAuthData();
 }]);
