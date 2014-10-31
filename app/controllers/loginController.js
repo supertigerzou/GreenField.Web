@@ -7,7 +7,7 @@ app.controller('loginController', ['$scope', '$location', 'authService', functio
 
     $scope.login = function () {
         authService.login($scope.loginData).then(function () {
-            $location.path('/books');
+            $location.path('/authors');
         });
     };
 }]);

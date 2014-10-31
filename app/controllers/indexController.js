@@ -6,4 +6,8 @@ app.controller('indexController', ['$scope', '$location', 'authService', functio
     };
 
     $scope.authentication = authService.authentication;
+    
+    $('.navbar-collapse').click('li', function () {
+        $('.navbar-collapse').collapse('hide');
+    });
 }]);

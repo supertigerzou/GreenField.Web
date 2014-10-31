@@ -26,6 +26,8 @@ app.factory('authService', ['$http', '$q', 'localStorageService', function ($htt
     };
 
     var _logOut = function () {
+        localStorageService.remove('authorizationData');
+
         _authentication.isAuth = false;
         _authentication.userName = "";
     };
