@@ -14,6 +14,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     }).when("/authors", {
         controller: "authorsController",
         templateUrl: "/app/views/authors.html"
+    }).when("/associate", {
+        controller: "associateController",
+        templateUrl: "/app/views/associate.html"
     }).when('/authors/:authorId', {
         controller: 'authorDetailsController',
         templateUrl: '/app/views/author-detail.html'
@@ -21,6 +24,12 @@ app.config(['$routeProvider', function ($routeProvider) {
         redirectTo: "/login"
     });
 }]);
+
+var serviceBase = 'http://localhost:59584/';
+app.constant('ngAppSettings', {
+    apiServiceBaseUri: serviceBase,
+    clientId: 'ngGreenField'
+});
 
 app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('authInterceptorService');

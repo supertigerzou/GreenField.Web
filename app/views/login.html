@@ -9,5 +9,13 @@
             <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
             <button class="btn btn-info btn-block" type="submit" data-ng-click="login()">Login</button>
         </div>
+        <div class="col-md-4">
+            <h2 class="form-login-heading">Social Logins</h2>
+            <p>Or you can login using one of the social logins bleow</p>
+            <button class="btn btn-large btn-google-plus btn-block" type="button" data-ng-click="authExternalProvider('Google')"><i class="fa fa-google-plus"></i> | Connect with Google+</button>
+        </div>
+        <div class="col-md-2">
+            &nbsp;
+        </div>
     </div>
 </form>

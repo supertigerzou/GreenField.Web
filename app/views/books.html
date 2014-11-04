@@ -1,9 +1,9 @@
 ﻿
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-3">
         &nbsp;
     </div>
-    <div class="col-md-8">
+    <div class="col-md-5">
         <table class="table table-striped table-bordered table-hover">
             <thead>
                 <tr>
@@ -15,7 +15,7 @@
             <tbody>
                 <tr data-ng-repeat="book in books">
                     <td>
-                        <img ng-src="{{ imageBase + book.pictureModels[0].imageUrl }}" alt=""/>
+                        <img ng-src="{{ imageBase + book.pictureModels[0].imageUrl }}" alt="" style="width: 30px"/>
                     </td>
                     <td>
                         {{ book.name }}
@@ -28,7 +28,7 @@
         </table>
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-4">
         &nbsp;
     </div>
 </div>
